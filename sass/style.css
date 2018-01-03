@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.transparent {
+  background-color: transparent;
+  padding: 0;
+}
+
+.jumbotron {
+  background: url("../images/jumbobg.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white {
+  color: #fff;
+}
+
+.white a {
+  color: #fff;
+}
