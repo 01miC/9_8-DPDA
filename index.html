@@ -42,13 +42,13 @@
               <p class="lead">
                 <a class="btn btn-primary btn-lg bt-main" href="#" role="button">get started</a>
               </p>
-              <div class="container icons justify-content-center">
+              <div class="container icons align-items-end justify-content-center">
                   
                   <i class="fa fa-twitter"></i>
                   <i class="fa fa-flickr"></i>
                   <i class="fa fa-dribbble"></i>
               
-            </div>
+              </div>
               
               
           </div>
@@ -86,13 +86,17 @@
             </div>
           </div>
         </div>
-        <div class="community-bg bg-grey">
+        <div class="container-fluid bg-grey">
+
           <div class="container rounded-0 our-community">
               <div class="row">
-                  <img src="images/logodark.png">
-                  <h2> </h2>
-                  <p></p>
-                  <div class="col-md-8 community-slider">
+                <div class="col-md-4">
+                  <img class="logo-dark" src="images/logodark.png">
+                  <h2>Our community </h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="col-md-8  ">
+                  <div class="col community-slider">
                       <div>
                         <a class="prev" href="#communityControls" role="button" data-slide="prev">
                           <i id="community-left" class="fa fa-angle-left"></i>
@@ -106,32 +110,61 @@
                       <div id="communityControls" class="carousel slide" data-ride="false" data-interval="false">
                       <div class="carousel-inner">
                         <div class="carousel-item active" data-number="01">
-                          <div class="row">
-                            <div class="col-md-6 col-xs-12 community-slide">
-                              <img class="d-block w-100" src="img/slider-img-1.jpg" alt="First hue">
-                            </div>
-                            <div class="col-md-6 col-xs-12 community-slide">
-                              <img class="d-block w-100" src="img/slider-img-2.jpg" alt="First hue">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-md-6 col-xs-12 community-slide">
+                                
+                                <img class="d-block w-100" src="images/slider-img-1.jpg" alt="First">
+                              </div>
+                              <div class="col-md-6 col-xs-12 community-slide">
+                                <img class="d-block w-100" src="images/slider-img-2.jpg" alt="2nd">
+                              </div>
                             </div>
                           </div>
                         </div>
                         <div class="carousel-item" data-number="02">
-                          <div class="row">
-                            <div class="col-md-6 col-xs-12 community-slide">
-                              <img class="d-block w-100" src="img/slider-img-3.jpg" alt="First hue">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-md-6 col-xs-12 community-slide">
+                                  <img class="d-block w-100" src="images/slider-img-3.jpg" alt="3rd">
+                                </div>
+                                <div class="col-md-6 col-xs-12 community-slide">
+                                  <img class="d-block w-100" src="images/slider-img-4.jpg" alt="4th">
+                                </div>
+                              </div>
                             </div>
-                            <div class="col-md-6 col-xs-12 community-slide">
-                              <img class="d-block w-100" src="img/slider-img-4.jpg" alt="First hue">
-                            </div>
-                          </div>
+                        </div>
                         </div>
                       </div>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-        
-
-      </div>
+          <section class="subscribe d-flex flex-column justify-content-center align-items-center">
+              <h2>Subscribe to our community</h2>
+              <form>
+                <input type="email" name="email" placeholder="YOUR E-MAIL"><button class="btn btn-themed"><i class="fa fa-check"></i></button>
+              </form>
+          </section>
+          <section class="download text-center" id="download">
+              <div class="container">
+                <h3>Download it</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="btn btn-themed">Apple Store <i class="fa fa-apple"></i></button><button class="btn btn-themed">Play store <i class="fa fa-android"></i></button>
+              </div>
+            </section>
+            <footer class="contact">
+              <div class="container">
+                <img src="images/logodark.png" alt="Logo">
+                <ul>
+                  <li><a href="#">Credits</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Our teams</a></li>
+                </ul>
+                <p>From PSD to HTML by <a href="https://github.com/ika-codes" target="_blank">WS 2017</a></p>
+              </div>
+            </footer>
       <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

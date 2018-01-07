@@ -61,7 +61,7 @@ body {
 
 .nav-style ul li {
   padding: 0px 40px;
-  line-height: 60px;
+  line-height: 80px;
 }
 
 .jumbo {
@@ -84,8 +84,6 @@ body {
 
 .jumbo .icons {
   font-size: 2rem;
-  align-items: flex-end;
-  align-content: flex-end;
 }
 
 .bg-grey {
@@ -123,7 +121,6 @@ body {
   background-color: #fff;
   background-image: url(../images/ipb.png);
   background-position: 30% bottom;
-  background-size: 20%;
   background-repeat: no-repeat;
   width: 100%;
   height: 450px;
@@ -160,4 +157,279 @@ body {
 
 .community-bg {
   width: 100%;
+}
+
+.our-community {
+  height: 400px;
+  padding: 80px 0px;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: 'GothamBold';
+}
+
+.our-community .logo-dark {
+  padding-top: 60px;
+}
+
+.our-community a {
+  color: #3b3b3b;
+}
+
+.our-community h2 {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.our-community p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 0.7rem;
+}
+
+.our-community .community-slider {
+  text-align: right;
+}
+
+.subscribe {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #373737;
+  background-image: url(../images/parallax.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.subscribe h2 {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'GothamBold';
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+}
+
+.subscribe input {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 260px;
+  padding: 15px;
+  outline: none;
+  vertical-align: baseline;
+}
+
+.subscribe button {
+  border-radius: 0 5px 5px 0;
+  padding: 15px 17px 14px 17px;
+  transform: translateY(-2px);
+  display: inline-block;
+  background-color: #16a085;
+  color: white;
+}
+
+.subscribe button:hover {
+  border-radius: 0 5px 5px 0;
+}
+
+.subscribe button i {
+  font-size: 24px;
+}
+
+.download {
+  width: 100%;
+  background-color: #f5f6f7;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.download h3 {
+  color: #373737;
+  text-transform: uppercase;
+  font-family: 'GothamBold';
+}
+
+.download p {
+  text-transform: uppercase;
+  padding: 10px 10% 0;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.download button {
+  margin-right: 20px;
+  border-radius: 4px;
+  padding: 0 0 0 30px;
+  background-color: #1ab192;
+  color: white;
+  font-family: 'GothamBold';
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.download button:hover {
+  border-radius: 4px;
+}
+
+.download button i {
+  font-size: 20px;
+  background-color: #16a085;
+  padding: 15px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  margin-left: 30px;
+}
+
+footer {
+  font-family: 'GothamBold';
+  padding: 45px 0 20px 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+footer img {
+  float: right;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  font-size: 12px;
+}
+
+footer ul li:after {
+  content: "|";
+  padding: 0 10px;
+  color: #16a085;
+}
+
+footer ul li:last-of-type:after {
+  content: "";
+}
+
+footer p {
+  font-size: 0.7rem;
+}
+
+footer a {
+  display: inline-block;
+  color: #3b3b3b;
+  transition: .5s;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+footer a:hover {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .represent-bg {
+    background-position: 80% -55%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 992px) {
+  .represent-bg {
+    background-position: 80% -55%;
+  }
+  .design {
+    padding: 20px 0 50px 0 !important;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .represent-bg {
+    background-position: right -800%;
+  }
+  .design {
+    padding: 20px 0 50px 0 !important;
+  }
+  .design-bg {
+    background-position-x: 20%;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .navbar-light button {
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    background-color: white;
+  }
+  .transparent {
+    background-color: rgba(255, 255, 255, 0.747);
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-light .navbar-nav .nav-item a {
+    color: #3b3b3b !important;
+  }
+  .navbar-light .navbar-nav .nav-item a img {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .represent-bg {
+    background: none;
+  }
+  .navbar-light button {
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    background-color: white;
+  }
+  .transparent {
+    background-color: rgba(255, 255, 255, 0.747);
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .navbar-light .navbar-nav .nav-item a {
+    color: #3b3b3b !important;
+  }
+  .navbar-light .navbar-nav .nav-item a img {
+    display: none;
+  }
+  .represent {
+    padding: 40px 0 50px 0;
+  }
+  .represent p {
+    width: 100%;
+  }
+  .design-bg {
+    background-position: center bottom;
+    height: 100vh;
+  }
+  .design-bg .design {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .our-community {
+    height: 100%;
+    padding-top: 10px;
+  }
+  .our-community .logo-dark {
+    padding-top: 10px;
+  }
+  .download button {
+    margin-top: 20px;
+  }
 }

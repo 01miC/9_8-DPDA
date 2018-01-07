@@ -16,9 +16,7 @@ $(function() {
         }	
     });
 
-var prevButton = document.getElementById('js-prevbg');
-var nextButton = document.getElementById('js-nextbg');
-var designBg = document.getElementById('js-designBg');
+
 var designBgArray =    [
                     'url(images/ipb.png)',
                     'url(images/ipg.png)',
@@ -26,36 +24,33 @@ var designBgArray =    [
                     'url(images/ipw.png)',
                     'url(images/ipy.png)'  
                         ]; 
-    var positionBg = document.getElementById('js-positionBg');
-var i=0;
+var positionBg = document.getElementById('js-positionBg');
+var designBg = document.getElementById('js-designBg');
+var i = 0;
 
+var nextButton = document.getElementById('js-nextbg');
+var prevButton = document.getElementById('js-prevbg');
 
 nextButton.addEventListener('click', function(e) {
-    //if(++i === designBgArray.length) i=0;
-    ++i;
-    updateView();
-  });
-  
-  prevButton.addEventListener('click', function(e) {
-   //if(--i < 0) i += designBgArray.length;
-    --i;
-    updateView();
-  });
-  
-  
-  function lz(nr){//a simple leading zero function
-    return String(nr).padStart(2, 0);
-  };
-  
+  ++i;
+  updateView();
+});
+
+prevButton.addEventListener('click', function(e) {
+  --i;
+  updateView();
+});
+
+
+function lz(nr){
+  return String(nr).padStart(2, 0);
+}
 
 function updateView() {
   var len = designBgArray.length;
-    //get i back into the boundaries
-    //you could also take care of that in the click-handler
-    //but this way, it's all in one place
-    var index = i%len + (i<0? len: 0);
 
-    designBg.style.backgroundImage = designBgArray[index];
-    positionBg.textContent = lz(index) + "/" + lz(len);
-  }
- 
+  var index = i%len + (i<0? len: 0);
+  
+  designBg.style.backgroundImage = designBgArray[index];
+  positionBg.textContent = lz(index+1) + "/" + lz(len);
+}
