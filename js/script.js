@@ -16,8 +16,8 @@ $(function() {
         }	
     });
 
-var designPrevBg = document.getElementById('js-prevbg');
-var designNextBg = document.getElementById('js-nextbg');
+var prevButton = document.getElementById('js-prevbg');
+var nextButton = document.getElementById('js-nextbg');
 var designBg = document.getElementById('js-designBg');
 var designBgArray =    [
                     'url(images/ipb.png)',
@@ -30,45 +30,32 @@ var designBgArray =    [
 var i=0;
 
 
-designPrevBg.addEventListener("click", function (e) {
-        if (i===0) {
-        i=4    
-        designBg.style.backgroundImage = designBgArray[i]; 
-        positionBg.innerHTML = "0" +(i+1) +"/05";
-        i--;
-        return i;
-        } else if (i===4) {
-            designBg.style.backgroundImage = designBgArray[i];
-            positionBg.innerHTML =  "0" +(i+1) +"/05";
-            i--;
-            return i;
-        } else {
-            designBg.style.backgroundImage = designBgArray[i]; 
-            positionBg.innerHTML = "0" +(i+1) +"/05";
-            i--;
-            return i;
-        };
-        
-});
+nextButton.addEventListener('click', function(e) {
+    //if(++i === designBgArray.length) i=0;
+    ++i;
+    updateView();
+  });
+  
+  prevButton.addEventListener('click', function(e) {
+   //if(--i < 0) i += designBgArray.length;
+    --i;
+    updateView();
+  });
+  
+  
+  function lz(nr){//a simple leading zero function
+    return String(nr).padStart(2, 0);
+  };
+  
 
-designNextBg.addEventListener('click', function(e) {
-    if (i===0) {
-        i=i+1;
-        designBg.style.backgroundImage = designBgArray[i]; 
-        positionBg.innerHTML = "0" +(i+1) +"/05";
-        return i;
-        } else if (i===4) {
-            designBg.style.backgroundImage = designBgArray[i];
-            i=0;
-            positionBg.innerHTML =  "0" +(i+1) +"/05";
-            return i;  
-        } else {
-            i=i+1;
-            designBg.style.backgroundImage = designBgArray[i]; 
-            positionBg.innerHTML = "0" +(i+1) +"/05";
-            return i; 
-        };
-        
-});
+function updateView() {
+  var len = designBgArray.length;
+    //get i back into the boundaries
+    //you could also take care of that in the click-handler
+    //but this way, it's all in one place
+    var index = i%len + (i<0? len: 0);
 
+    designBg.style.backgroundImage = designBgArray[index];
+    positionBg.textContent = lz(index) + "/" + lz(len);
+  }
  
